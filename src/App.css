@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-login, .login-section, .login-section a, .login-section section input, .todos-header, .todos-page, .todo-form, .todo-form input {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-login {
+  height: 100vh;
+  background: rgb(255,208,251);
+  background: linear-gradient(144deg, rgba(255,208,251,1) 0%, rgba(201,203,245,1) 48%, rgba(177,242,255,1) 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-section {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  height: 50%;
+  width: 75%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+}
+
+.login-infos {
+  width: 70%;
+}
+
+.login-infos section {
+  margin-bottom: 20px;
+}
+
+.login-section section input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+}
+
+.login-section a, .login-section a button {
+  background: rgb(255,208,251);
+  background: linear-gradient(254deg, rgba(255,208,251,1) 0%, rgba(201,203,245,1) 48%, rgba(177,242,255,1) 100%);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  width: 70%;
+  height: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.todos-page {
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.todos-header {
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: rgb(226, 255, 255);
+}
+
+.todo-form {
+  width: 100%;
+  height: 5vh;
+}
+
+.todo-form input, .todo-form button {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(204, 204, 204, 0.568);
 }

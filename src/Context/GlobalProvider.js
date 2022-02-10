@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import GlobalContext from "./GlobalContext";
 
 function GlobalProvider({ children }) {
-    const [animals, setAnimals] = useState([]);
+    const [email, setEmail] = useState('');
+    const [userName, setUserName] = useState('');
+    const [todos, addTodo] = useState([]);
+    const [tempTodo, setTempTodo] = useState('');
+
     const contextValue = {
-        animals,
-        setAnimals,
+        email,
+        setEmail,
+        userName,
+        setUserName,
+        todos,
+        addTodo,
+        tempTodo,
+        setTempTodo,
     }
 
     return(
