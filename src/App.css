@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
-.main-login, .login-section, .login-section a, .login-section section input, .todos-header, .todos-page, .todo-form, .todo-form input {
+.main-login, .login-section, .login-section a, .login-section section input, .todos-header, .todos-page, .todo-form, .todo-form input, .todos-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,4 +83,21 @@
   width: 100%;
   height: 100%;
   border: 1px solid rgba(204, 204, 204, 0.568);
+}
+
+.todos {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.todos-div {
+  width: 95%;
+  height: 4vh;
+  margin: 10px 2.5%;
+  border: 1px solid black;
+}
+
+.todos-div input {
+  margin-right: 5px;
 }

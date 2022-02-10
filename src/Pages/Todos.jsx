@@ -36,12 +36,12 @@ function Todos() {
             </button>
           </div>
           <div className="todos">
-            <ol>
+            <ul>
                 {todos.map((todo, index) => {
-                    return <div key={ `${index}-todo` }><input type="checkbox" /> <li className="todo-line">{todo}</li></div>
+                    return <div key={ `${index}-todo` } className="todos-div" ><input type="checkbox" /> <li className="todo-line">{todo}</li></div>
                 })}
 
-            </ol>
+            </ul>
           </div>
 
         </div>
